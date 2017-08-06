@@ -2,53 +2,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.dell.orps.SplashScreen"
-   >
+    android:animationCache="false"
+    android:background="@color/Background"
+    tools:context="com.example.dell.orps.SplashScreen">
 
     <TextView
         android:id="@+id/welcome_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome_note"
-        android:textAlignment="center"
+        android:textColor="#212121"
         android:textStyle="bold"
-        android:textSize="30dp"
-        android:layout_marginBottom="18dp"
-        android:layout_above="@+id/imageView"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:layout_marginBottom="77dp"
+        android:layout_above="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        app:srcCompat="@drawable/splashimage1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="118dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome"
+        android:text="@string/ORPS"
+        android:textSize="25sp"
+        android:textColor="#212121"
         android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="97dp" />
+        android:layout_marginBottom="61dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="@string/splashtext"
         android:textSize="18sp"
-        android:layout_marginBottom="39dp"
-        android:text="@string/splashtext" />
+        android:textColor="#212121"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/parking"
+        android:layout_marginBottom="82dp"
+        android:layout_above="@+id/welcome_note"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

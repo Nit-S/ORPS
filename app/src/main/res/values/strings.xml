@@ -14,18 +14,47 @@
     <string name="signup">Sign Up</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="app_name" translatable="false">ORPS</string>
-    <string name="welcome_note" translatable="false">ORPS</string>
-    <string name="welcome" translatable="false">Welcome to online railway parking system</string>
-    <string name="splashtext" translatable="false">Designed By UTS Team</string>
-    <string name="ORPS" translatable="false">Online Railway Parking System</string>
+    <string name="welcome_note">ORPS</string>
+    <string name="welcome">Welcome to online railway parking system</string>
+    <string name="splashtext">Designed By UTS Team</string>
+    <string name="ORPS">Online Railway Parking System</string>
     <string name="twowheeler" translatable="false">Two Wheeler</string>
     <string name="fourwheeler" translatable="false">Four Wheeler</string>
-    <string name="enterstation" translatable="false">Enter Station : </string>
-    <string name="findparking" translatable="false">Find Parking</string>
-    <string name="enteryourdetails" translatable="false">Enter Your Details</string>
-    <string name="name" translatable="false">Name</string>
-    <string name="contact" translatable="false">Contact Number</string>
+    <string name="enterstation">Enter Station : </string>
+    <string name="findparking">Find Parking</string>
+    <string name="enteryourdetails">Enter Your Details</string>
+    <string name="name">Name</string>
+    <string name="contact">Contact Number</string>
+    <string name="email">Email</string>
     <string name="signup" translatable="false">Sign Up</string>
-    <string name="welcome1" translatable="false">Welcome , </string>
+    <string name="welcome1">Welcome </string>
     <string name="ghy">GHY</string>
+    <string name="stationdetail">STATION DETAILS</string>
+    <string name="twowheelerparkingdetails">TWO WHEELER</string>
+    <string name="fourwheelerparkingdetails">FOUR WHEELER</string>
+    <string name="Book">BOOK</string>
+    <string name="thirtyminutes">Book For Thirty Minutes</string>
+    <string name="onehour">Book For One Hour</string>
+    <string name="twohours">Book For Two Hours</string>
+    <string name="threehours">Book For Three Hours</string>
+    <string name="fillinyourdetails">FILL IN YOUR DETAILS</string>
+    <string name="namerequired">Name(Required)</string>
+    <string name="contactnumberrequired">Contact Number(Required)</string>
+    <string name="vehiclenumber">Vehicle Number(Required)</string>
+    <string name="vehicletype">Vehicle Type(Required) : </string>
+    <string name="vehiclecolor">Vehicle Color</string>
+    <string name="vehiclename">Vehicle Name</string>
+    <string name="confirmandpay">Confirm and Pay</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personaldetails">Personal Details</string>
+    <string name="next">Next</string>
+    <string name="cardetails">Vehicle Details</string>
+    <string name="paymentoptions">Payment Options</string>
+    <string name="paytm">PayTM</string>
+    <string name="railwaywallet">Railway Wallet</string>
+    <string name="card">Credit/Debit Card</string>
+    <string name="othermodes">Other Modes</string>
+    <string name="previous">Previous</string>
 </resources>

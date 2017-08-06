@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
+    TextView welcomenote;
+    RelativeLayout splashlayout;
     private static int SPLASH_TIME_OUT = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,17 +30,22 @@ public class SplashScreen extends AppCompatActivity {
                 // Start your app main activity
                 SharedPreferences sharedPreferences=getSharedPreferences("Mypref",0);
                 if(sharedPreferences.getString("NAME",null)==null || sharedPreferences.getString("CONTACT",null)==null) {
-                    Intent i = new Intent(SplashScreen.this, SignInActivity.class);
-                    startActivity(i);
+                    Intent i4 = new Intent(SplashScreen.this, SignInActivity.class);
+                    startActivity(i4);
+
                 }
                 else{
-                    Intent i1=new Intent(SplashScreen.this,MainActivity.class);
-                    startActivity(i1);
+                    Intent i5=new Intent(SplashScreen.this,MainActivity.class);
+                    startActivity(i5);
+
                 }
                 // close this activity
                 finish();
             }
         }, SPLASH_TIME_OUT);
+        splashlayout=(RelativeLayout)findViewById(R.id.splashlayout);
+        welcomenote=(TextView)findViewById(R.id.welcome_note);
+
     }
 
 }

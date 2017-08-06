@@ -3,12 +3,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/Background"
+    android:layout_height="match_parent"
     tools:context="com.example.dell.orps.ParkingDetails">
-
-    <TextView
-        android:id="@+id/details"
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:text="@string/stationdetail"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/stationdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twowheelerparkingdetails"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:layout_weight="0.5"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fourwheelerparkingdetails"
+            android:layout_weight="0.5"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/Two_Wheeler"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="138dp" />
+
+        <ListView
+            android:id="@+id/Four_Wheeler"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="138dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:elevation="4dp"
+        android:textSize="20sp"
+        android:background="#00000000"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="@string/Book" />
 </LinearLayout>

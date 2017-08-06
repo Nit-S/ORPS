@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Background"
+    tools:context="com.example.dell.orps.BookingActivity"
+    android:weightSum="1">
+<RadioGroup
+    android:id="@+id/radio"
+    android:layout_width="357dp"
+    android:layout_weight="0.72"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/halfhour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/thirtyminutes"
+        android:layout_gravity="center"
+        android:layout_margin="32dp" />
+
+    <RadioButton
+        android:id="@+id/onehour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="32dp"
+        android:text="@string/onehour" />
+
+    <RadioButton
+        android:id="@+id/twohour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+       android:text="@string/twohours" />
+
+    <RadioButton
+        android:id="@+id/threehour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/threehours" />
+
+</RadioGroup>
+
+    <Button
+        android:id="@+id/confirmbooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#00000000"
+        android:layout_weight="0.15"
+        android:text="Confirm Booking" />
+</LinearLayout>

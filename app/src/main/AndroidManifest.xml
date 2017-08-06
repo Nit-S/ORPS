@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/parking"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -20,9 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignInActivity"></activity>
 
-        <activity android:name=".ParkingDetails"></activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".ParkingDetails"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BookingActivity"
+            android:parentActivityName=".ParkingDetails"/>
+        <activity android:name=".DetailsActivity"
+            android:parentActivityName=".BookingActivity"/>
+        <activity android:name=".PaymentActivity"
+            android:parentActivityName=".DetailsActivity"></activity>
 
     </application>
 
